@@ -18,7 +18,8 @@ public class StreamMap {
      * @return - a Stream of single characters
      */ //TODO
     public static Stream<String> letters(String someWord) {
-        return null;
+        return Stream.of(someWord.toCharArray())
+                .map(Object::toString);
     }
 
     /**
@@ -35,5 +36,7 @@ public class StreamMap {
      */ //TODO
     public static Stream<String> wordsFlatMap(String... stringArray) {
         return null;
+//        return Stream.of(stringArray)
+//                .flatMap();
     }
 }
